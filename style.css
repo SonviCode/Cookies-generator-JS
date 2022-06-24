@@ -1,0 +1,69 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'po';
+    src: url(./Poppins-Regular.ttf);
+}
+
+body {
+    font-family: 'po';
+    background: linear-gradient(to right, #c9d6ff, #e2e2e2);
+}
+
+h1 {
+    text-align: center;
+    padding: 50px;
+    font-size: clamp(
+    40px, 4vw, 70px);
+}
+
+.cookie-form  {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    width: 80%;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.cookie-form input {
+    outline: none;
+    border: none;
+    padding: 20px;
+}
+
+.cookie-form  input:focus {
+    box-shadow: 4px 4px 15px 0px rgba(51, 51, 51, 0.5);
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.affichage {
+    list-style-type: none;
+    margin: 0 auto;
+    width: 75%;
+    padding: 15px;
+    font-size: 40px;
+}
+
+.info-txt {
+    margin: 10px auto;
+    padding: 20px;
+    font-size: 20px;
+    width: 75%;
+}
